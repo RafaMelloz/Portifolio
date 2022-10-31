@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear{
+    clear: both;
+}
+
+.top-menu{
+    background-color: rgba(252, 252, 252, 0);
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-bottom:0.5px solid rgba(255, 255, 255, 0.274) ;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.top-menu a{
+    color: white;
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration: none;
+    transition-timing-function: ease-out;
+        transition: 1s;
+   
+}
+
+.top-menu a:hover {
+    color: deepskyblue;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+
+
+.top-menu li{
+        display: inline-block;
+        padding: 20px 10px;
+}
+
+.top-menu ul {
+margin: auto;
+width: 400px;
+}
+
+#content {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#content-apresentacao{
+    color: white;
+    width: 500px;
+    float: left;
+    padding: 10px;
+    margin: 30vh 0vw;
+    margin-left: 15vw;
+}
+
+#content-apresentacao h1 {
+font-family: 'Bangers', cursive;
+letter-spacing: 3px;
+font-size: 98px;
+}
+
+#content-apresentacao p {
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#ultimop{
+    margin-bottom: 30px;
+}
+
+#content-apresentacao a{
+    border-radius: 30px;
+    padding: 10px 160px;
+    border: 4px solid white;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    transition-timing-function: ease-out;
+    transition: 1s;
+}
+
+
+#content-apresentacao a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  
+}
+
+
+#content-img {
+    background-color: rgba(0, 0, 255, 0);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 30%;
+    height: 100px;
+    float: right;
+    padding: 10px;
+    margin: 35vh 0vw;
+    margin-right: 10vw;
+}
+
+
+/*********************SOBRE MIM***********************/
+
+#sobreMim{
+    height: 80vh;
+    background-color: rgb(74, 175, 206);
+    padding: 30px;
+}
+
+
+#sobreMim  h1{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    letter-spacing:2px ;
+    color: aliceblue;
+    font-size: 46px;
+    text-shadow:-7px 2px 7px #000;
+}
+
+.content-sobre{
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.img{
+background: white;
+border-radius: 200px;
+width: 400px;
+height: 400px;
+float: left;
+
+}
+
+.text-sobre{
+    width: 600px;
+float: right;
+padding: 80px 10px;
+}
+
+.text-sobre p{
+  color: white;
+font-size: 26px;
+padding-bottom: 10px;
+text-indent: 25px;
+}
+
+   
+
+
+
+/*********************projetos***********************/
+
+#projetos {
+    height: 80vh;
+    background-color: rgb(0, 20, 26);
+    padding: 30px;
+}
+
+#projetos h1{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    letter-spacing:2px ;
+    color: aliceblue;
+    font-size: 46px;
+    text-shadow:-7px 2px 7px #000;
+}
+
+.content-projetos {
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+
+.projetos{
+    background-color:rgb(175, 173, 173) ;
+    width: 300px;
+    height: 200px;
+    border-radius:20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px;
+    overflow: hidden;
+}
+.projetos img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    filter: blur(5px);
+   
+}
+
+
+
+.faixa{
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-top: 1px solid rgba(255, 255, 255, 0.445);
+    border-bottom:1px solid rgba(255, 255, 255, 0.445) ;
+    text-align: center;
+    padding: 10px;
+    position:absolute;
+
+}
+
+.faixa a {
+        color: white;   
+        text-decoration: none;
+        font-family: 'Bangers', cursive;
+        letter-spacing: 2px;
+        transition-timing-function: ease-out;
+        transition: 1.5s;
+    
+
+}
+
+.faixa a:hover{
+    letter-spacing: 3px;
+   
+    font-size: 28px;
+}
+
+.faixa-emBreve{
+    transform: rotate(-53deg);
+    width: 330px;
+    background-color: black;
+    text-align: center;
+    padding: 5% ;
+   
+}
+
+.faixa-emBreve p{
+    color: white;
+}
+
+#link-git{
+    margin: 30px 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+    transition-timing-function: ease-out;
+}
+
+#link-git:hover {
+   color: deepskyblue;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#habilidades {
+    height: 60vh;
+    background-color: rgb(74, 175, 206);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-animação ul li {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    list-style: none;
+    opacity: 0;
+    background: radial-gradient(deepskyblue, transparent, transparent);
+    bottom: 0;
+    left: 10vw;
+    animation: animate 15s linear infinite;
+}
+
+.box-animaçãoul li:nth-child(2) {
+    left: 36vw;
+    animation-delay: 2s;
+}
+
+.box-animaçãoul li:nth-child(3) {
+    left: 22vw;
+    animation-delay: 4s;
+}
+
+.box-animação ul li:nth-child(4) {
+    left: 56vw;
+    animation-delay: 6s;
+}
+
+.box-animação ul li:nth-child(5) {
+    left: 76vw;
+    animation-delay: 4s;
+}
+
+.box-animação ul li:nth-child(6) {
+    left: 80vw;
+    animation-delay: 8s;
+}
+
+
+@keyframes animate{
+    0% {
+        transform: scale(0);
+        opacity: 1;
+        bottom: 0;
+    }
+
+    100% {
+        transform: scale(10);
+        opacity: 0;
+        bottom: 100vh;
+    }
+}
+

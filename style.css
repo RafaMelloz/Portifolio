@@ -6,6 +6,16 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent,#00c6ff);
+    border-radius: 20px;
+}
+
 .clear{
     clear: both;
 }
@@ -59,9 +69,7 @@ width: 400px;
     color: white;
     width: 500px;
     float: left;
-    padding: 10px;
-    margin: 30vh 0vw;
-    margin-left: 15vw;
+ 
 }
 
 #content-apresentacao h1 {
@@ -107,18 +115,19 @@ font-size: 98px;
     width: 30%;
     height: 100px;
     float: right;
-    padding: 10px;
-    margin: 35vh 0vw;
-    margin-right: 10vw;
+
 }
 
 
 /*********************SOBRE MIM***********************/
 
 #sobreMim{
-    height: 80vh;
-    background-color: rgb(74, 175, 206);
+  
+    height: 74vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(3, 38, 48, 1) 16%, rgba(0, 212, 255, 1)100%);
     padding: 30px;
+    padding-top: 90px!important;
 }
 
 
@@ -132,7 +141,8 @@ font-size: 98px;
 }
 
 .content-sobre{
-    width: 70vw;
+    padding-top: 10px;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -165,9 +175,11 @@ text-indent: 25px;
 /*********************projetos***********************/
 
 #projetos {
-    height: 80vh;
-    background-color: rgb(0, 20, 26);
+    height: 91vh;
+    background: rgb(0, 179, 255);
+    background: linear-gradient(180deg, rgba(0, 212, 255, 1) 7%, rgba(5, 151, 181, 1) 15%, rgba(0, 0, 0, 1) 29%);
     padding: 30px;
+    padding-top: 208px !important;
 }
 
 #projetos h1{
@@ -282,8 +294,9 @@ text-indent: 25px;
 
 
 #habilidades {
-    height: 60vh;
-    background-color: rgb(74, 175, 206);
+    height: 80vh;
+    background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(3, 38, 48, 1) 16%, rgba(0, 212, 255, 1)100%);
 }
 
 

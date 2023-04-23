@@ -396,6 +396,12 @@ ul {
     background-position: center 0;
 }
 
+#cold {
+    background: linear-gradient(180deg, rgb(0 28 87 / 90%) 0%, rgba(0 0 0 / 90%) 100%), url(image/cold.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
 /***********FOOTER**********/
 
 footer {

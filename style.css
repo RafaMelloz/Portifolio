@@ -74,6 +74,7 @@ ul {
     height: 100vh;
     overflow: hidden;
     background-color: #000;
+    
 }
 
 #content-apresentacao {
@@ -120,12 +121,9 @@ ul {
 }
 
 
-#content-img {
-    background-color: rgba(0, 0, 255, 0);
-    border: 1px solid white;
-    border-radius: 10px;
-    width: 30%;
-    height: 100px;
+#content-img img {
+    width: 100%;
+    border-radius:300px;
 
 }
 
@@ -218,6 +216,10 @@ ul {
 }
 
 
+.projetos:nth-of-type(3) img {
+    filter: blur(2px);
+}
+
 
 .faixa {
     width: 300px;
@@ -244,7 +246,7 @@ ul {
 .faixa a:hover {
     letter-spacing: 3px;
 
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .faixa-emBreve {
@@ -523,9 +525,42 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+    #content-apresentacao h1 {
+        font-size: 80px;
+    }
 
-@media (min-width: 1200px) {
-    .container:nth-of-type(1) {
-        max-width: 960px !important;
+    #content-apresentacao p {
+        font-size: 24px;
+    }
+
+    #content-apresentacao a {
+        margin: auto;
+    }
+
+    .col-md-8 {
+        text-align: center;
+    }
+
+    #content-img img {
+        width: 45%;
+        margin: auto;
+        border-radius: 300px;
+        display: block;
+    }
+}
+
+@media (max-width: 560px) {
+    .top-menu ul {
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .top-menu li {
+        display: inline-block;
+        padding: 20px 2px;
     }
 }

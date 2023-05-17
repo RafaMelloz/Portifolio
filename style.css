@@ -41,7 +41,6 @@
     text-decoration: none;
     transition-timing-function: ease-out;
     transition: 1s;
-
 }
 
 .top-menu a:hover {
@@ -50,8 +49,7 @@
     font-size: 20px;
 }
 
-ol,
-ul {
+ol,ul {
     padding-left: 0px !important;
 }
 
@@ -65,21 +63,16 @@ ul {
     width: 400px;
 }
 
-/*------------------------------*/
-
 /*------ PRIMEIRA SESSÃO -------*/
-
 
 #conteudo {
     height: 100vh;
     overflow: hidden;
     background-color: #000;
-    
 }
 
 #content-apresentacao {
     color: white;
-
 }
 
 #content-apresentacao h1 {
@@ -93,8 +86,6 @@ ul {
     font-size: 30px;
     letter-spacing: 1px;
 }
-
-
 
 #content-apresentacao a {
     display: block;
@@ -113,21 +104,16 @@ ul {
     text-align: center;
 }
 
-
 #content-apresentacao a:hover {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-
 }
-
 
 #content-img img {
     width: 100%;
     border-radius:300px;
-
 }
 
-/*---------------------------------------------*/
 
 /*********************SOBRE MIM***********************/
 
@@ -151,9 +137,6 @@ ul {
 .img {
     background: white;
     border-radius: 200px;
-    /* width: 100%;
-    height: 100%; */
-
 }
 
 .text-sobre {
@@ -166,8 +149,6 @@ ul {
     padding-bottom: 10px;
     text-indent: 25px;
 }
-
-/*---------------------------------------------*/
 
 /*********************projetos***********************/
 
@@ -212,24 +193,21 @@ ul {
     width: 300px;
     height: 300px;
     filter: blur(5px);
-
 }
-
 
 .projetos:nth-of-type(3) img {
     filter: blur(2px);
 }
 
-
 .faixa {
-    width: 300px;
+    width: calc(100% - 40px);
+    max-width: 300px;
     background-color: rgba(0, 0, 0, 0.534);
     border-top: 1px solid rgba(255, 255, 255, 0.445);
     border-bottom: 1px solid rgba(255, 255, 255, 0.445);
     text-align: center;
     padding: 10px;
     position: absolute;
-
 }
 
 .faixa a {
@@ -239,13 +217,10 @@ ul {
     letter-spacing: 2px;
     transition-timing-function: ease-out;
     transition: 1.5s;
-
-
 }
 
 .faixa a:hover {
     letter-spacing: 3px;
-
     font-size: 22px;
 }
 
@@ -255,7 +230,6 @@ ul {
     background-color: black;
     text-align: center;
     padding: 5%;
-
 }
 
 .faixa-emBreve p {
@@ -277,6 +251,7 @@ ul {
     color: deepskyblue;
     font-size: 24px;
 }
+
 
 /*******************HABILIDADES***************/
 
@@ -320,21 +295,6 @@ ul {
     transition-timing-function: ease;
     margin: 40px;
 }
-
-/*
-.cartao:nth-child(1){
-    box-shadow: 0px 24px 35px rgb(247, 160, 0);
-}
-.cartao:nth-child(2) {
-    box-shadow: 0px 24px 35px rgb(10, 12, 167);
-}
-.cartao:nth-child(3) {
-    box-shadow: 0px 24px 35px rgb(188, 191, 1);
-}
-*/
-
-
-
 
 
 .cartao_overlay {
@@ -445,32 +405,7 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**********************animação***********************/
 
 .box-animação ul li {
     position: absolute;
@@ -525,6 +460,8 @@ footer {
 }
 
 
+/**********************MEDIAS***********************/
+
 @media (max-width: 768px) {
     #content-apresentacao h1 {
         font-size: 80px;
@@ -549,9 +486,10 @@ footer {
         border-radius: 300px;
         display: block;
     }
-
-    
+ 
 }
+
+
 
 @media (max-width: 560px) {
     .top-menu ul {
@@ -559,9 +497,10 @@ footer {
         width: 100%;
         font-size: 14px;
     }
-
-    
 }
+
+
+
 
 @media (max-width: 425px) {
     .top-menu li {
@@ -583,5 +522,14 @@ footer {
 
     .box-animação ul li:nth-child(6) {
         display: none;
+    }
+
+    .top-menu {
+        background-color: rgba(17, 17, 17, 0.856);
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.274);
+        backdrop-filter: blur(0px);
     }
 }

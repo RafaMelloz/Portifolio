@@ -12,12 +12,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent, #00c6ff);
+    background: linear-gradient(transparent, rgb(7, 68, 148));
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(transparent, #037ea0);
+    background: linear-gradient(transparent, rgb(3, 32, 71));
     border-radius: 5px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .top-menu a {
-    color: white;
+    color: rgb(184, 184, 184);
     display: inline-block;
     font-weight: bolder;
     text-decoration: none;
@@ -44,9 +44,24 @@
 }
 
 .top-menu a:hover {
-    color: deepskyblue;
-    transition: 0.5s;
-    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition:  .5s ease;
+}
+
+.selector::after {
+    border-bottom: 2px solid #fff;
+    content: "";
+    display: block;
+    margin-top: 5px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.selector:hover::after {
+    transform: scaleX(1);
 }
 
 ol,ul {
@@ -119,7 +134,7 @@ ol,ul {
 
 #sobreMim {
     background: rgb(0, 0, 0);
-        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(3, 38, 48, 1) 16%, rgba(0, 212, 255, 1) 56%, rgba(0, 0, 0, 1) 100%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(3, 17, 48)16%, rgb(4, 50, 110) 56%, rgba(0, 0, 0, 1) 100%);
     padding: 30px;
     padding-top: 90px !important;
 }
@@ -152,7 +167,7 @@ ol,ul {
 /*********************projetos***********************/
 
 #projetos {
-    background: rgb(0, 9, 14);
+    background: rgba(0, 0, 0, 1);
     padding: 30px;
 }
 
@@ -255,7 +270,7 @@ ol,ul {
 #habilidades {
     min-height: 80vh;
     background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(3, 38, 48, 1) 16%, rgba(0, 212, 255, 1)100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(3, 17, 48) 16%, rgb(4, 50, 110)100%);
 }
 
 #habilidades h1 {
@@ -410,7 +425,7 @@ footer {
     height: 35px;
     list-style: none;
     opacity: 0;
-    background: radial-gradient(deepskyblue, transparent, transparent);
+    background: radial-gradient(rgb(4, 50, 110), transparent, transparent);
     bottom: 0;
     left: 10vw;
     animation: animate 15s linear infinite;

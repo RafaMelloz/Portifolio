@@ -268,7 +268,7 @@ ol,ul {
 /*******************HABILIDADES***************/
 
 #habilidades {
-    min-height: 80vh;
+    padding-bottom: 100px;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(3, 17, 48) 16%, rgb(4, 50, 110)100%);
 }
@@ -283,7 +283,7 @@ ol,ul {
     padding-top: 50px;
 }
 
-.content-habilidades {
+/* .content-habilidades {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -374,8 +374,73 @@ ol,ul {
     background: linear-gradient(180deg, rgb(0 28 87 / 90%) 0%, rgba(0 0 0 / 90%) 100%), url(image/cold.png);
     background-repeat: no-repeat;
     background-position: center 0;
+} */
+
+
+
+.flex{
+    padding: 3rem 0;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
 }
 
+.flex li{
+    color: white;
+    list-style-type: none;
+}
+
+
+.flex-skills{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.skill{
+    color: white;
+    background-color: rgba(2, 6, 12, 1);
+    border-radius: 12px;
+    width: 144px;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+    transform: scale(1);
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.skill img{
+    max-width: 64px;
+    max-height: 64px;
+}
+
+#html{
+    box-shadow: 0px 2px 12px 4px #E44D25;
+}
+
+#css {
+    box-shadow: 0px 2px 12px 4px #0277bd;
+}
+
+#js {
+    box-shadow: 0px 2px 12px 4px #ffdf00;
+}
+
+#boots {
+    box-shadow: 0px 2px 12px 4px #6f10f5;
+}
+
+#angular {
+    box-shadow: 0px 2px 12px 4px #c30e2e;
+}
 /***********FOOTER**********/
 
 footer {
@@ -498,6 +563,14 @@ footer {
         margin: auto;
         border-radius: 300px;
         display: block;
+    }
+    .flex-skills{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .skill{
+        margin-bottom: 20px;
     }
  
 }

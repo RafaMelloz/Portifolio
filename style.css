@@ -441,6 +441,34 @@ ol,ul {
 #angular {
     box-shadow: 0px 2px 12px 4px #c30e2e;
 }
+
+#php {
+    box-shadow: 0px 2px 12px 4px #777bb3;
+}
+
+#cold {
+    box-shadow: 0px 2px 12px 4px #7cafff;
+}
+
+#mySql{
+    box-shadow: 0px 2px 12px 4px #cf8201;
+}
+
+#git {
+    box-shadow: 0px 2px 12px 4px #de4c36;
+}
+
+#gitHub {
+    box-shadow: 0px 2px 12px 4px #eeeeee;
+}
+
+#vscode {
+    box-shadow: 0px 2px 12px 4px #2fa3f1;
+}
+
+
+
+
 /***********FOOTER**********/
 
 footer {
@@ -575,6 +603,16 @@ footer {
  
 }
 
+@media (max-width: 655px) {
+    .flex{
+        flex-direction: column;
+        align-items: center
+    }
+
+    .flex li {
+        margin: 5px 0
+    }
+}
 
 
 @media (max-width: 560px) {

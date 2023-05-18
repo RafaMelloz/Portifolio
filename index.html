@@ -33,7 +33,7 @@
                     <p style="margin-bottom: -1rem;">Ola, eu sou o</p>
                     <h1 style="margin-bottom: -1rem;">Rafael Melo</h1>
                     <p>Desenvolvedor Web</p>
-                    <a href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid=12619604099_asid=122510712920_crid=509739556235_kw=linked_d=c_tid=kwd-103941963_n=g_mt=e_geo=9074235_slid=&mcid=6821526239111716925&cid=&gclsrc=aw.ds&gclid=Cj0KCQjwwfiaBhC7ARIsAGvcPe5rhZixOXOlTXfl10t3Fq0Hwb8f2Ps0bqJliea3q_0rKbJEDCEL0xsaAtLaEALw_wcB">LinkedIn<i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/rafael-melo-b68b5923b/">LinkedIn<i class="fa-brands fa-linkedin"></i></a>
                 </div>
 
                 <div class="col-md-4" style="margin-top: 13%;">
@@ -73,12 +73,10 @@
     </div>
 
 
-    <div id="projetos" >
-        <h1 data-aos="fade-down">Projetos</h1>
+    <div data-aos="fade-down" id="projetos" >
+        <h1 >Projetos</h1>
 
-       
-
-         <div class="content-projetos" data-aos="fade-down">
+         <div class="content-projetos" >
             <div class="projetos">
                 <div class="faixa-emBreve">
                     <p style="margin:0">EM BREVE</p>
@@ -111,14 +109,14 @@
 
         <div class="col-md-12">
             <ul class="flex">
-                <li class="selector"><i class="fa-solid fa-laptop-code"></i> Front-End</li>
-                <li class="selector"><i class="fa-solid fa-qrcode"></i> Back-End</li>
-                <li class="selector"><i class="fa-solid fa-screwdriver-wrench"></i> Ferramentas</li>
+                <li class="selector" onclick="front()"><i class="fa-solid fa-laptop-code" id="frontIcon"></i> Front-End</li>
+                <li class="selector" onclick="back()"><i class="fa-solid fa-qrcode" id="backIcon"  style="display: none;"></i> Back-End</li>
+                <li class="selector" onclick="tolls()"><i class="fa-solid fa-screwdriver-wrench" id="tollsIcon" style="display: none;"></i> Ferramentas</li>
             </ul>
         </div>
 
         <div class="container">
-            <div class="col-md-12 flex-skills frontEnd">
+            <div class="col-md-12 flex-skills" id="frontEnd" >
                 <div class="skill" id="html">
                     <img src="image/html (1).png"><br>
                     <span>HTML</span>
@@ -143,56 +141,48 @@
                     <img src="image/angular.png"><br>
                     <span>Angular</span>
                 </div>
+            </div>
 
+            <div class="col-md-12 flex-skills" id="BackEnd" style="display: none;">
+                <div class="skill" id="js">
+                    <img src="image/js (1).png"><br>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="skill" id="php">
+                    <img src="image/php.png"><br>
+                    <span>PHP</span>
+                </div>
+
+                <div class="skill" id="cold">
+                    <img src="image/cold.png"><br>
+                    <span>ColdFusion</span>
+                </div>
+
+                <div class="skill" id="mySql">
+                    <img src="image/mysql.png"><br>
+                    <span>MySql</span>
+                </div>
+            </div>
+
+
+            <div class="col-md-12 flex-skills" id="Tolls" style="display: none;">
+                <div class="skill" id="git">
+                    <img src="image/git.png"><br>
+                    <span>Git</span>
+                </div>
+
+                <div class="skill" id="gitHub">
+                    <img src="image/github..png"><br>
+                    <span>GitHub</span>
+                </div>
+
+                <div class="skill" id="vscode">
+                    <img src="image/vs.png"><br>
+                    <span>VsCode</span>
+                </div>
             </div>
         </div>
-
-
-        
-    <!-- <div class="content-habilidades">
-            <div id="html" class="cartao rounded">
-                <div class="cartao_overlay"></div>
-                <div class="cartao-heading">
-                    <h2>HTMl</h2>
-                </div>
-            </div>
-
-            <div id="css" class="cartao rounded">
-                <div class="cartao_overlay"></div>
-                <div class="cartao-heading">
-                    <h2>Css</h2>
-                </div>
-            </div>
-
-            <div id="js" class="cartao rounded">
-                <div class="cartao_overlay"></div>
-                <div class="cartao-heading">
-                    <h2>Js</h2>
-                </div>
-            </div>
-        </div>
-
-        <div id="apareceMais" style="display: none;">
-            <div class="content-habilidades">
-                <div id="php" class="cartao rounded">
-                    <div class="cartao_overlay"></div>
-                    <div class="cartao-heading">
-                        <h2>PHP</h2>
-                    </div>
-                </div>
-
-                <div id="cold" class="cartao rounded">
-                    <div class="cartao_overlay"></div>
-                    <div class="cartao-heading">
-                        <h2>ColdFusion</h2>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <img id="seta" style="display: block; margin: 0 auto; cursor: pointer;" src="image/seta.png"> -->
     </div>
 
 
@@ -200,8 +190,8 @@
     <footer>
         <div class="container">
             <div class="footer-icons">
-                <a href=""><img src="image/gmail.png"></a>
-                <a href=""><img src="image/linkedinI.png"></a>
+                <a href="mailto:rafaelmeloalvessouza@gmail.com"><img src="image/gmail.png"></a>
+                <a href="https://www.linkedin.com/in/rafael-melo-b68b5923b/"><img src="image/linkedinI.png"></a>
                 <a href="https://wa.me/1199339613"><img src="image/whatsapp.png"></a>
             </div>
         </div>
@@ -220,6 +210,32 @@
     
     AOS.init();
 
+    function front() {
+        document.getElementById('BackEnd').style.display="none"
+        document.getElementById('Tolls').style.display = "none"
+        document.getElementById('frontEnd').style.display = "flex"
+         document.getElementById('backIcon').style.display = "none"
+        document.getElementById('frontIcon').style.display = "inline-block"
+        document.getElementById('tollsIcon').style.display = "none"
+    }
+
+    function back() {
+        document.getElementById('BackEnd').style.display = "flex"
+        document.getElementById('Tolls').style.display = "none"
+        document.getElementById('frontEnd').style.display = "none"
+        document.getElementById('backIcon').style.display = "inline-block"
+        document.getElementById('frontIcon').style.display = "none"
+        document.getElementById('tollsIcon').style.display = "none"
+    }
+
+    function tolls() {
+        document.getElementById('BackEnd').style.display = "none"
+        document.getElementById('Tolls').style.display = "flex"
+        document.getElementById('frontEnd').style.display = "none"
+         document.getElementById('backIcon').style.display = "none"
+        document.getElementById('frontIcon').style.display = "none"
+        document.getElementById('tollsIcon').style.display = "inline-block"
+    }
 </script>
 
 </html>

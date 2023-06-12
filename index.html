@@ -24,10 +24,23 @@
             <li class="selector"><a href="#sobreMim">Sobre Mim</a></li>
             <li class="selector"><a href="#projetos">Projetos</a></li>
             <li class="selector"><a href="#habilidades">Habilidades</a></li>
+            
         </ul>
     </header>
 
-    <div id="conteudo">
+    <aside>
+        <div  class="group-aside">
+            <a href="mailto:rafaelmeloalvessouza@gmail.com"><img class="iconAside" src="image/gmail.png"></a>
+            <a href="https://www.linkedin.com/in/rafael-melo-b68b5923b/"><img class="iconAside" src="image/linkedinI.png"></a>
+            <a href="https://wa.me/1199339613"><img class="iconAside" src="image/whatsapp.png"></a>
+            <a href="https://wa.me/1199339613"><i class="fa-brands fa-github iconAside"></i></a>
+        </div>
+        <button id="sidebar"><i class="fa-solid fa-xmark"></i></button>
+    
+    </aside>
+
+    <section id="conteudo">
+        
         <div class="container">
             <div class="row">
                 <div class="col-md-8" id="content-apresentacao" style="padding-top: 20%;">
@@ -55,9 +68,9 @@
                 <li></li>
             </ul>
         </div>
-    </div>
+    </section>
 
-    <div id="sobreMim">
+    <section id="sobreMim">
         <h1>Sobre mim</h1>
         <div class="row">
             <div class="col-md-6">
@@ -71,10 +84,10 @@
                 <p>Hoje já entendo tecnologias como Javscritp, java, Mysql, etc.</p>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div data-aos="fade-down" id="projetos" >
+    <section data-aos="fade-down" id="projetos" >
         <h1 >Projetos</h1>
 
          <div class="content-projetos" >
@@ -108,10 +121,10 @@
             <a id="link-git" href="https://github.com/RafaMelloz">Repositório do Git <i
                     class="fa-brands fa-github"></i></a>
         </div>
-    </div>
+    </section>
 
 
-    <div data-aos="fade-down" id="habilidades">
+    <section data-aos="fade-down" id="habilidades">
         <h1 >habilidades</h1>
 
 
@@ -191,18 +204,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
 
     <footer>
         <div class="container">
             <span>Criado por <b>Rafael Melo</b> com HTML, CSS e JS</span>
-            <div class="footer-icons">
-                <a href="mailto:rafaelmeloalvessouza@gmail.com"><img src="image/gmail.png"></a>
-                <a href="https://www.linkedin.com/in/rafael-melo-b68b5923b/"><img src="image/linkedinI.png"></a>
-                <a href="https://wa.me/1199339613"><img src="image/whatsapp.png"></a>
-            </div>
         </div>
     </footer>
 
@@ -211,8 +219,20 @@
 
 <script>
     $(function () {
-        $('#seta').click(function () {
-            $('#apareceMais').slideToggle();
+          var elementoVisivel = true;
+        $('#sidebar').click(function () {
+
+            if (elementoVisivel) {
+                $(".group-aside").animate({ width: '10px' }, 'fast');
+                $(".iconAside").toggle();
+            } else {
+                $(".group-aside").animate({ width: '40px' }, 'fast');
+                $(".iconAside").toggle();
+            }
+
+            elementoVisivel = !elementoVisivel;
+
+          
         })
     })
 

@@ -35,7 +35,7 @@
             <a href="https://wa.me/1199339613"><img class="iconAside" src="image/whatsapp.png"></a>
             <a href="https://wa.me/1199339613"><i class="fa-brands fa-github iconAside"></i></a>
         </div>
-        <button id="sidebar"><i class="fa-solid fa-xmark"></i></button>
+        <button id="btn-side"><i class="fa-solid fa-xmark"></i></button>
     
     </aside>
 
@@ -220,19 +220,20 @@
 <script>
     $(function () {
           var elementoVisivel = true;
-        $('#sidebar').click(function () {
+        $('#btn-side').click(function () {
 
             if (elementoVisivel) {
+                $("#btn-side").animate({ width: '10px' }, 'fast');
                 $(".group-aside").animate({ width: '10px' }, 'fast');
                 $(".iconAside").toggle();
+                
             } else {
-                $(".group-aside").animate({ width: '40px' }, 'fast');
+                $("#btn-side").animate({ width: '100%' }, 'fast');
+                $(".group-aside").animate({ width: '100%' }, 'fast');
                 $(".iconAside").toggle();
             }
 
-            elementoVisivel = !elementoVisivel;
-
-          
+            elementoVisivel = !elementoVisivel;  
         })
     })
 

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/afc3be874b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="jquery.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -33,9 +33,9 @@
             <a href="mailto:rafaelmeloalvessouza@gmail.com"><img class="iconAside" src="image/gmail.png"></a>
             <a href="https://www.linkedin.com/in/rafael-melo-b68b5923b/"><img class="iconAside" src="image/linkedinI.png"></a>
             <a href="https://wa.me/1199339613"><img class="iconAside" src="image/whatsapp.png"></a>
-            <a href="https://github.com/RafaMelloz"><i class="fa-brands fa-github iconAside"></i></a>
+            <a href="https://github.com/RafaMelloz"><i class="fa fa-github iconAside" aria-hidden="true"></i></a>
         </div>
-        <button id="btn-side"><i class="fa-solid fa-xmark"></i></button>
+        <button id="btn-side"><i class="fa fa-times" aria-hidden="true"></i></button>
     
     </aside>
 
@@ -47,7 +47,7 @@
                     <p style="margin-bottom: -1rem;">Ola, eu sou o</p>
                     <h1 style="margin-bottom: -1rem;">Rafael Melo</h1>
                     <p>Desenvolvedor Web</p>
-                    <a href="https://www.linkedin.com/in/rafael-melo-b68b5923b/">LinkedIn<i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/rafael-melo-b68b5923b/">LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="col-md-4" style="margin-top: 13%;">
@@ -98,28 +98,34 @@
             </div> -->
 
             <div class="projetos">
-                <img src="image/orangix.png"></img>
+                <img src="image/orangix.png">
                 <div class="faixa">
                     <a href="https://orangix.vercel.app">Orangix (fecht API)</a>
                 </div>
             </div>
 
             <div class="projetos">
-                <img src="image/logoTcc.svg"></img>
+                <img src="image/logoTcc.svg">
                 <div class="faixa">
                     <a href="https://github.com/RafaMelloz/kidsAcademy">Kids Academy! (TCC)</a>
                 </div>
             </div>
 
             <div class="projetos">
-                <img src="image/appTask.png"></img>
+                <img src="image/appTask.png">
                 <div class="faixa">
                     <a href="https://task-app-one-pi.vercel.app">appTask! (Angular)</a>
                 </div>
             </div>
 
-            <a id="link-git" href="https://github.com/RafaMelloz">Repositório do Git <i
-                    class="fa-brands fa-github"></i></a>
+            <div class="projetos" style="margin: 00px 20px 50px 20px;">
+                <img src="image/pokemon.jpg" style="max-width: 100%;">
+                <div class="faixa">
+                    <a href="https://pokedex-rafa.vercel.app">Pokedex!</a>
+                </div>
+            </div>
+
+            <a id="link-git" href="https://github.com/RafaMelloz"><i class="fa fa-github" aria-hidden="true"></i> Repositório do Git</a>
         </div>
     </section>
 
@@ -130,9 +136,9 @@
 
         <div class="col-md-12">
             <ul class="flex">
-                <li class="selector" onclick="front()"><i class="fa-solid fa-laptop-code" id="frontIcon"></i> Front-End</li>
-                <li class="selector" onclick="back()"><i class="fa-solid fa-qrcode" id="backIcon"  style="display: none;"></i> Back-End</li>
-                <li class="selector" onclick="tolls()"><i class="fa-solid fa-screwdriver-wrench" id="tollsIcon" style="display: none;"></i> Ferramentas</li>
+                <li class="selector" onclick="front()"><i class="fa fa-desktop" aria-hidden="true" id="frontIcon"></i> Front-End</li>
+                <li class="selector" onclick="back()"><i class="fa fa-cogs" aria-hidden="true" id="backIcon"  style="display: none;"></i> Back-End</li>
+                <li class="selector" onclick="tolls()"><i class="fa fa-wrench" aria-hidden="true" id="tollsIcon" style="display: none;"></i> Ferramentas</li>
             </ul>
         </div>
 

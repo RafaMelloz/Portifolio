@@ -283,6 +283,14 @@ aside{
     max-width: 55%;
 }
 
+.projetos:nth-of-type(6) {
+    background-image: url('image/vtex.jpg');  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+}
+
 .faixa {
     width: calc(100% - 122px);
     max-width: 300px;

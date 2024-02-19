@@ -336,6 +336,14 @@ aside{
     background-color: white;
 }
 
+.projetos:nth-of-type(7) {
+    background-image: url('image/game.png');  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+}
+
 /*******************HABILIDADES***************/
 
 #habilidades {
